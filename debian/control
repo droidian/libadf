@@ -1,0 +1,31 @@
+Source: libadf
+Priority: optional
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Build-Depends: debhelper-compat (= 13),
+               libdrm-dev,
+               meson (>= 0.53.0),
+               pkg-config,
+Standards-Version: 4.6.1.0
+Section: libs
+Homepage: https://github.com/droidian/libadf
+Vcs-Git: https://github.com/droidian/libadf.git
+Vcs-Browser: https://github.com/droidian/libadf
+Rules-Requires-Root: no
+
+Package: libadf-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         libadf0 (= ${binary:Version}),
+         libdrm-dev,
+Description: libadf  - development headers
+ This package contains the development headers.
+
+Package: libadf0
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: libadf - shared library
+ This package contains the shared library.
