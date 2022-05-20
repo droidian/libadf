@@ -21,8 +21,8 @@
 #include <linux/ioctl.h>
 #include <linux/types.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#include <drm/drm_fourcc.h>
-#include <drm/drm_mode.h>
+#include <libdrm/drm_fourcc.h>
+#include <libdrm/drm_mode.h>
 #define ADF_NAME_LEN 32
 #define ADF_MAX_CUSTOM_DATA_SIZE 4096
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
